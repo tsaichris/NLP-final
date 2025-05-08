@@ -1,0 +1,6 @@
+conda create --name nlp python=3.9
+conda activate nlp
+pip install langchain
+pip install -U langchain langchain-openai
+pip install python-dotenv
+

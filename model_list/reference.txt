@@ -1,0 +1,14 @@
+Overall:
+https://python.langchain.com/docs/tutorials/llm_chain/
+
+Doc:
+https://python.langchain.com/docs/concepts/chat_models/
+
+Model list:
+https://python.langchain.com/docs/integrations/chat/
+
+Messages:
+https://python.langchain.com/docs/concepts/messages/#role
+
+Model instance:
+https://python.langchain.com/docs/concepts/runnables/
