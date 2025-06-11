@@ -81,7 +81,7 @@ MULTILINGUAL_ANSWER_PATTERN_TEMPLATE = (
 def normalize_extracted_answer(extracted_answer: str) -> str:
     return (
         # In arabic these are the letters used for A-D in multiple choice questions
-        extracted_answer.replace("أ", " A")
+        extracted_answer.upper().replace("أ", " A")
         .replace("ب", " B")
         .replace("ج", " C")
         .replace("د", " D")
@@ -95,6 +95,16 @@ def normalize_extracted_answer(extracted_answer: str) -> str:
         .replace("Ｂ", " B")
         .replace("Ｃ", " C")
         .replace("Ｄ", " D")
+        # <letter> -> letter
+        .replace("<A>", " A")
+        .replace("<B>", " B")
+        .replace("<C>", " C")
+        .replace("<D>", " D")
+        # [letter] -> letter
+        .replace("[A]", " A")
+        .replace("[B]", " B")
+        .replace("[C]", " C")
+        .replace("[D]", " D")
         .strip()
     )
 
