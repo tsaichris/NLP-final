@@ -10,11 +10,6 @@ except ImportError:
     pass
 
 # Langsmith
-os.environ["LANGSMITH_TRACING"] = "true"
-if "LANGSMITH_API_KEY" not in os.environ:
-    os.environ["LANGSMITH_API_KEY"] = "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"
-if "LANGSMITH_PROJECT" not in os.environ:
-    os.environ["LANGSMITH_PROJECT"] = "nlp_final"
 
 # Model API
 if "OPENAI_API_KEY" not in os.environ:
