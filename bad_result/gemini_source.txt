@@ -1,0 +1,19 @@
+gemini-2.0-flash ja-jp base input base output longest-first line 15
+- Repetition
+
+gemini-2.0-flash ja-jp base input base output longest-first line 511
+- Repetition + answer with None of the above
+
+gemini-2.0-flash ja-jp base input json-full output reverse line 1688
+- No tool but online search?
+
+gemini-2.0-flash ja-jp base input json-full output longest-first line 1009
+- Answer: I don't know
+
+gemini-2.0-flash en base input json-full output longest-first line 1009
+- Answer: I cannot answer
+
+gemini-2.0-flash en base input base output default line 1009
+- Repetition + cannot answer
+
+
